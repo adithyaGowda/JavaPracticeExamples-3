@@ -2,13 +2,9 @@ package com.stackroute.pe3;
 
 public class MultipleExceptions {
 
-    public static void main(String[] args) {
+    public String exceptionGenerate(int result, int arraySize, int negativeSize) {
 
-        int result = 0;
-        int arraySize = 3;
-        int negativeSize = -1;
         int[] array = null;
-
         for(int i = 0; i<3 ; ++i)
             try {
                 switch(i) {
@@ -39,7 +35,7 @@ public class MultipleExceptions {
                 System.out.println("\nArrayIndexOutOfBoundsException Exception caught. " +
                         "Message in ArrayIndexOutOfBoundsException is:\n" +
                         "\n" + e + "\n");
-
             }
+        return "Done";
     }
 }
