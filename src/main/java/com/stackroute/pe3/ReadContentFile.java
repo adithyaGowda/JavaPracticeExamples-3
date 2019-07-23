@@ -7,9 +7,9 @@ import java.io.FileReader;
 
 public class ReadContentFile {
 
-    public static void main(String[] args) throws  Exception{
+    public String contentRead(File file) throws  Exception{
 
-        File file = new File("/home/cgi/Downloads/random/hello.txt");
+//        File file = new File("/home/cgi/Downloads/random/hello.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -22,6 +22,8 @@ public class ReadContentFile {
             System.out.println(x);
 
         }
+
+        return "Done";
 
     }
 
