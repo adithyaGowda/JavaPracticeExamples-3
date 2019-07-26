@@ -20,12 +20,12 @@ public class MultipleExceptionsTest {
     }
 
     @Test
-    public void inputDataWillThrowExceptions(){
+    public void givenInputDataWillThrowExceptions(){
         assertEquals("Done",multipleExceptions.exceptionGenerate(0,3,-1));
     }
 
     @Test
-    public void inputDataValidatesForNotEquality(){
+    public void givenInputDataShouldReturnNotEqualValue(){
         assertEquals("Done",multipleExceptions.exceptionGenerate(0,3,-1));
     }
 

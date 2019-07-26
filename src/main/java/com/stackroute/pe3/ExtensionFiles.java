@@ -18,13 +18,17 @@ public class ExtensionFiles implements FilenameFilter {
     String fileExtension;
 
     public ExtensionFiles(String fileExtension) {
+
         this.fileExtension = fileExtension;
     }
 
     @Override
     public boolean accept(File directory, String fileName) {
+
         return (fileName.endsWith(this.fileExtension));
     }
+
+
 
 
 

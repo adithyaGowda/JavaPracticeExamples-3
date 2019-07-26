@@ -35,6 +35,8 @@ public class MultipleExceptions {
                 System.out.println("\nArrayIndexOutOfBoundsException Exception caught. " +
                         "Message in ArrayIndexOutOfBoundsException is:\n" +
                         "\n" + e + "\n");
+                System.out.println("The contents of the stack trace are:\n");
+                e.printStackTrace();
             }
         return "Done";
     }
